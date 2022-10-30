@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'css/Product.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fcontainer">
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <img class="logo" src="{% static 'img/assets/logo.png' %}" />
+          <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/product/">Product</a>
+            <a href="">footer</a>
+            <a href="">content</a>
+            <a href="">about</a>
+          </nav>
+        </header>
+        <div class="wrapper" id="wrapper">
+            <section class="product" id="product">
+              <h1 class="heading">Product <span>Nike</span></h1>
+              <div class="box-container">
+                <div class="box">
+                  <div class="content">
+                    <img src="{% static 'img/assets/nike1.png' %}" alt="">
+                    <h3>Nike Shoes</h3>
+                    <div class="price">200k <span></span></div>
+                    <div class="btn">
+                      <div class="btn-checkout" id="checkout1" onclick="getDetail(1)">checkout</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="content">
+                    <img src="{% static 'img/assets/nike2.png' %}" alt="">
+                    <h3>Nike Shoes</h3>
+                    <div class="price">150k <span></span></div>
+                    <div class="btn">
+                      <div class="btn-checkout" id="checkout2" onclick="getDetail(2)">checkout</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                  </div>
+                  <div class="content">
+                    <img src="{% static 'img/assets/nike3.png' %}" alt="">
+                    <h3>Nike Shoes</h3>
+                    <div class="price">350k <span></span></div>
+                    <div class="btn">
+                      <div class="btn-checkout" onclick="getDetail(3)">checkout</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                  </div>
+                  <div class="content">
+                    <img src="{% static 'img/assets/nike4.png' %}" alt="">
+                    <h3>Nike Shoes</h3>
+                    <div class="price">400k <span></span></div>
+                    <div class="btn">
+                      <div class="btn-checkout" onclick="getDetail(4)">checkout</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                  </div>
+                  <div class="content">
+                    <img src="{% static 'img/assets/nike5.png' %}" alt="">
+                    <h3>Nike Shoes</h3>
+                    <div class="price">450k <span></span></div>
+                    <div class="btn">
+                      <div class="btn-checkout" onclick="getDetail(5)">checkout</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                  </div>
+                  <div class="content">
+                    <img src="{% static 'img/assets/nike6.png' %}" alt="">
+                    <h3>Nike Shoes</h3>
+                    <div class="price">700k <span>850k</span></div>
+                    <div class="btn">
+                      <div class="btn-checkout" onclick="getDetail(6)">checkout</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+    </div>
+    <script src="{% static 'js/product.js' %}"></script>
+</body>
+</html>

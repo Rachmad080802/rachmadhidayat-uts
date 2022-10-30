@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fcontainer">
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <img class="logo" src="{% static 'img/assets/logo.png' %}" />
+          <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/product/">Product</a>
+            <a href="#top-item">footer</a>
+            <a href="#">content</a>
+            <a href="#">about</a>
+          </nav>
+        </header>
+        
+          <!-- Slide -->
+        <div class="slide" id="slide">
+            <section class="home" id="home">
+              <div class="slide-container active">
+                <div class="slide">
+                  <div class="content">
+                    <span>BAUNG SHOP</span>
+                    <h3>Nike Metcon Shoes</h3>
+                    <p>Selamat Datang Di Toko BAUNGSHOP</p>
+                    <a href="#product" class="btn-slide">KUNJUNGI</a>
+                  </div>
+                  <div class="image">
+                    <img src="{% static 'img/assets/nike1.png' %}" class="shoe">
+                  </div>
+                </div>
+              </div>
+              <div class="slide-container">
+                <div class="slide">
+                  <div class="content">
+                    <span>BAUNG SHOP</span>
+                    <h3>Nike Metcon Shoes</h3>
+                    <p>
+                      Selamat Datang Di Toko BAUNGSHOP
+                    </p>
+                    <a href="#product" class="btn-slide">KUNJUNGI</a>
+                  </div>
+                  <div class="image">
+                    <img src="{% static 'img/assets/nike2.png' %}" class="shoe">
+                  </div>
+                </div>
+              </div>
+              <div class="slide-container">
+                <div class="slide">
+                  <div class="content">
+                    <span>BAUNG SHOP</span>
+                    <h3>Nike Metcon Shoes</h3>
+                    <p>
+                      Selamat Datang Di Toko BAUNGSHOP
+                    </p>
+                    <a href="#product" class="btn-slide">KUNJUNGI</a>
+                  </div>
+                  <div class="image">
+                    <img src="{% static 'img/assets/nike3.png' %}" class="shoe">
+                  </div>
+                </div>
+              </div>
+              <div class="slide-container">
+                <div class="slide">
+                  <div class="content">
+                    <span>BAUNG SHOP</span>
+                    <h3>Nike Metcon Shoes</h3>
+                    <p>
+                      Selamat Datang Di Toko BAUNGSHOP
+                    </p>
+                    <a href="#product" class="btn-slide">KUNJUNGI</a>
+                  </div>
+                  <div class="image">
+                    <img src="{% static 'img/assets/nike4.png' %}" class="shoe">
+                  </div>
+                </div>
+              </div>
+      
+              <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+              <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+            </section>
+          </div>
+          <!--end Slide-->
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

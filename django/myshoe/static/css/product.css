@@ -1,0 +1,229 @@
+*{
+    font-family:iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+html{
+    font-size: 60%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+    width: 50px;
+    color: #000;
+    font-weight: 500;
+}
+header .navbar a{
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0 2rem;
+}
+header .navbar a:hover{
+    color: orangered;
+}
+header .icons a{
+    font-size: 2rem;
+    color: #000;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color: rgb(0, 255, 242);
+}
+#menu-bar{
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border: .1rem solid #000;
+    color: #000;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: none;
+}
+.product-container {
+    height:100vh;
+    width: 100vw;
+    display: flex;
+}
+.product-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+.product-card {
+	margin: auto;
+	width: 200px;
+	box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 1rem;
+}
+.product-image {
+	position: relative;
+	padding-bottom: 100%;
+}
+.product-image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+.product-body {
+	padding: 0.75rem;
+}
+.product-body *:not(:first-child) {
+	margin-top: 0.4rem;
+}
+.product-price {
+	font-weight: 600;
+}
+.product-discount {
+	color: rgb(102, 98, 98);
+	font-size: 0.8rem;
+}
+.product-discount-percentage {
+	padding: 0.1rem 0.3rem;
+	border-radius: 0.3rem;
+	color: white;
+	background-color: rgba(255, 0, 0, 0.493);
+}
+.product-rates {
+	color: rgb(102, 98, 98);
+}
+.yellow-star {
+	color: rgb(255, 166, 0);
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+.productBox {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productBox img {
+    width: 500px;
+    height: 500px;
+}
+  
+.titleBox {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    font-family: fantasy;
+}
+.descriptionBox {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-family: fantasy;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.card {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+.description {
+    font-size: 18px;
+    font-weight: 600;
+}
+.top-item {
+    background-color: coral;
+    margin-top: 40px;
+}
+.top-item-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+  
+.top-item-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.top-item-detail {
+    color: #f7f7f7;
+}
+  
+.top-item-detail h3 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+  
+.top-item-detail p {
+    font-size: 24px;
+}
+  
+.top-item-row img {
+    width: 350px;
+    height: auto;
+}
+button {
+   font-size: 40px;
+   margin-top: 70px;
+   justify-content: center;
+   align-items: center;
+   left: 10%;
+   border-radius: .5rem;
+   border: .2rem solid #000;
+   font-weight: bolder;
+   font-size: 1.7rem;
+   color: #000;
+   cursor: pointer;
+   padding: .8rem 3rem;
+   background-color: skyblue;
+}
